@@ -17,6 +17,27 @@
 </div>
 <script>
 
+//on defini une que le texte prenne la couleur au passage de la sourie sur le caré de couleur
+
+$("#green").hover(function(){
+  $("#texte").css('color', 'green');
+});
+
+$("#red").hover(function(){
+  $("#texte").css('color', 'red');
+});
+
+$("#blue").hover(function(){
+  $("#texte").css('color', 'blue');
+});
+
+// on veut que ça redevienne noir en retrait de la sourie :
+
+$("#green, #red, #blue").mouseout(function(){
+  $("#texte").css('color', 'black');
+});
+
+
 </script>
 </body>
 </html>
